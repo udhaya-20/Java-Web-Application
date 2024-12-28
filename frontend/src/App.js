@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function App() {
   const [name, setName] = useState('');
   const [designation, setDesignation] = useState('');
@@ -27,7 +28,7 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+    <div class="congrats">
       <h1>🎉 Congratulations! 🎉</h1>
       <p>You have successfully deployed a Java Full Stack application!</p>
       <h2>Employee Details Form</h2>

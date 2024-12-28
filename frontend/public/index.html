@@ -3,11 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Employee Form</title>
+  <title>Employee Portal</title>
   <link rel="stylesheet" href="%PUBLIC_URL%/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="root"></div>
+  <header>
+    <div class="logo">Employee Portal</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="hero" id="home">
+    <h1>Welcome to the Employee Portal</h1>
+    <p>Your gateway to managing employee records and updates efficiently.</p>
+    <div id="root"></div>
+  </section>
+
+  <section class="about-us" id="about">
+    <h2>About Us</h2>
+    <p>
+      At Employee Portal, we aim to simplify employee management and communication within organizations. 
+      Our platform is designed to empower HR professionals and employees by providing a secure, efficient, 
+      and user-friendly system to manage their daily tasks. Whether you are tracking employee records, 
+      sharing updates, or accessing key insights, our portal ensures a seamless experience.
+    </p>
+    <p>
+      With a commitment to innovation and excellence, we continuously strive to enhance our services to 
+      meet the evolving needs of businesses and their workforce.
+    </p>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Our Features</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Employee Management</h3>
+        <p>Track and manage employee details effortlessly.</p>
+      </div>
+      <div class="card">
+        <h3>Real-Time Updates</h3>
+        <p>Stay informed with instant updates and notifications.</p>
+      </div>
+      <div class="card">
+        <h3>Secure Portal</h3>
+        <p>Enjoy secure access to sensitive employee data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Employee Portal. All rights reserved.</p>
+  </footer>
+  
   <script src="%PUBLIC_URL%/index.js"></script>
 </body>
 </html>
+

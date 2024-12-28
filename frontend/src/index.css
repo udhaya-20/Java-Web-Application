@@ -1,27 +1,58 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+  background-color: #478778;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
-h1 {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.congrats {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.congrats h1 {
   color: #4caf50;
-  font-size: 2.5rem;
 }
 
-h2 {
+.congrats h2 {
   color: #333;
   font-size: 1.5rem;
 }
 
-p {
+.congrats p {
   color: #333;
   font-size: 1rem;
 }
 
-form {
+.congrats form {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -30,17 +61,17 @@ form {
   text-align: left;
 }
 
-form div {
+.congrats form div {
   margin-bottom: 15px;
 }
 
-form label {
+.congrats form label {
   display: block;
   margin-bottom: 5px;
   font-size: 1rem;
 }
 
-form input {
+.congrats form input {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -49,7 +80,7 @@ form input {
   font-size: 1rem;
 }
 
-form button {
+.congrats form button {
   padding: 10px 20px;
   background-color: #4caf50;
   color: white;
@@ -59,7 +90,7 @@ form button {
   font-size: 1rem;
 }
 
-form button:hover {
+.congrats form button:hover {
   background-color: #45a049;
 }
 
@@ -72,3 +103,140 @@ form button:hover {
   text-align: center;
   margin-top: 50px;
 }
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-color: #478778;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-us p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(30% - 2rem);
+  max-width: 30%;
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact button {
+  background-color: #ff5722;
+  color: white;
+  margin: 0 auto;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
